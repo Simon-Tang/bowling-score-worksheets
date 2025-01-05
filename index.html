@@ -50,6 +50,7 @@
         Sheet number
         <input id="sheet-number-control" type="number" min="1"
       /></label>
+      <button id="print">Print</button>
     </section>
 
     <section class="sheet padding-10mm">
@@ -123,6 +124,10 @@
           }
           goToSheet(e.target.value);
         });
+
+      document
+        .querySelector("#print")
+        .addEventListener("click", () => window.print());
 
       function goToSheet(sheetNumber) {
         document.querySelector("#sheet-number-display").textContent =
