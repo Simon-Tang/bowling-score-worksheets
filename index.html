@@ -21,6 +21,7 @@
       }
       body {
         font-family: sans-serif;
+        font-size: 12px;
       }
       table {
         border-collapse: collapse;
@@ -54,7 +55,7 @@
         border-width: 1px 2px 2px 2px;
       }
       tr:nth-child(2n - 1) td:nth-child(n + 2) {
-        width: 1.75em;
+        width: 1.5em;
       }
       td {
         height: 4ex;
@@ -161,7 +162,7 @@
 
         const seededRandom = new Math.seedrandom("sheet-" + sheetNumber);
         const tbody = document.querySelector("tbody");
-        const numGames = 12;
+        const numGames = 15;
         const gameRows = [...new Array(numGames)].map((_) =>
           createRandomGameRows(seededRandom)
         );
