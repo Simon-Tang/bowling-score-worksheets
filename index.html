@@ -29,7 +29,29 @@
       table,
       th,
       td {
-        border: 1px solid black;
+        border-color: black;
+        border-style: solid;
+        border-width: 0 2px;
+      }
+      table,
+      th {
+        border-width: 2px;
+      }
+      tr:nth-child(2n - 1) td:nth-child(2n + 2) {
+        border-width: 2px 1px 1px 2px;
+      }
+      tr:nth-child(2n - 1) td:nth-child(2n + 3) {
+        border-width: 2px 2px 1px 1px;
+      }
+      tr:nth-child(2n - 1) td:nth-child(21) {
+        border-right-width: 1px;
+      }
+      tr:nth-child(2n - 1) td:nth-child(22) {
+        border-left-width: 1px;
+        border-right-width: 2px;
+      }
+      tr:nth-child(2n) td {
+        border-width: 1px 2px 2px 2px;
       }
       td {
         height: 4ex;
